@@ -1,9 +1,10 @@
 import { Box, Text } from "@chakra-ui/react";
+import Login from "./components/Login";
 
 export default function Home() {
   return (
     <>
-      <Text>家のもの管理アプリ</Text>
+      <Login />
     </>
   );
 }
