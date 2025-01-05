@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import type { Metadata } from "next";
 import Header from "./components/Header";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "あれ、あったっけ？",
@@ -16,7 +17,9 @@ export default function RootLayout({
     <html lang="ja">
       <body>
         <ChakraProvider>
-          <Header/>
+          <Link href="/manage">
+            <Header />
+          </Link>
           {children}
         </ChakraProvider>
       </body>
