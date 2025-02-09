@@ -39,7 +39,6 @@ const SideBar = () => {
           <DrawerBody>
             <Text>登録一覧</Text>
           </DrawerBody>
-
           <DrawerFooter>
             <Button mr={3}>ログアウト</Button>
           </DrawerFooter>
