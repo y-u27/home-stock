@@ -1,18 +1,23 @@
-import { Box, Input, Spacer, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box } from "@chakra-ui/react";
+import RegisterField from "./RegisterField";
+import SearchField from "./SearchField";
 
 const MainPage = () => {
   return (
     <>
-      <Box display="flex" justifyContent="center" pt="200px">
-        <Box pl="30%">
-          <Text fontSize="20px" textAlign="center" textShadow='2px 2px #4FD1C5' m='5'>登録</Text>
-          <Input />
-        </Box>
-        <Spacer />
-        <Box pr="30%">
-          <Text fontSize="20px" textAlign="center" textShadow='2px 2px #F6AD55' m='5'>検索</Text>
-          <Input />
+      <Box position="relative">
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          gap="250px"
+          position="absolute"
+          top="250px"
+          left="50%"
+          transform="translateX(-50%)"
+        >
+          <RegisterField />
+          <SearchField />
         </Box>
       </Box>
     </>
