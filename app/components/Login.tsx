@@ -1,18 +1,14 @@
-import { Card, CardBody, CardHeader, Input, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
 
 const Login = () => {
   return (
     <>
-      <Card width="50%" mx="auto" mt="5%" boxShadow="2xl">
-        <CardHeader>ログイン</CardHeader>
-        <CardBody>
-          <Text>メールアドレス</Text>
-          <Input />
-          <Text>パスワード</Text>
-          <Input />
-        </CardBody>
-      </Card>
+      <Flex height="100vh" alignItems="center" justifyContent="center">
+        <Flex direction="column" background="gray.100" padding={12} rounded={6}>
+          <Text>ログイン</Text>
+        </Flex>
+      </Flex>
     </>
   );
 };
