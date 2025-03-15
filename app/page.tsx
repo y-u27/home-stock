@@ -1,11 +1,14 @@
 import { Box } from "@chakra-ui/react";
-import Login from "./components/Login";
 
 export default function Home() {
   return (
     <>
-      <Box backgroundColor="yellow.200" color="green.500">
-        <Login />
+      <Box color="green.500">
+        <Box display="flex" justifyContent="center">
+          <Box>説明1</Box>
+          <Box>説明2</Box>
+          <Box>説明3</Box>
+        </Box>
       </Box>
     </>
   );
