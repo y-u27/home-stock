@@ -6,7 +6,6 @@ import SideBar from "./SideBar";
 const Header = () => {
   return (
     <Box
-      bgColor="yellow.200"
       height="50px"
       display="flex"
       alignItems="center"
@@ -16,8 +15,9 @@ const Header = () => {
         justifyContent="center"
         textAlign="center"
         fontSize="24px"
-        color="green.500"
+        color="green.300"
         fontWeight="bold"
+        // textShadow="2px 2px #38A169"
       >
         あれ、あったっけ？
       </Text>
