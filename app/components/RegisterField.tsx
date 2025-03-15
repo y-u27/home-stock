@@ -5,35 +5,40 @@
 "use client";
 
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, IconButton, Input, Text } from "@chakra-ui/react";
+import { Box, Card, CardBody, IconButton, Input, Text } from "@chakra-ui/react";
 
 const RegisterField = () => {
   return (
     <>
-      <Box>
-        <Text
-          fontSize="20px"
-          textAlign="center"
-          textShadow="2px 2px #4FD1C5"
-          position="fixed"
-          right="79%"
-          bottom="90px"
+      <Card w="280px" h="150px" background="teal.100">
+        <CardBody
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
-          登録
-        </Text>
-        <Box position="relative" w="120%">
-          <Input />
-          <IconButton
-            icon={<ArrowForwardIcon />}
-            aria-label="Open menu"
-            size="sm"
-            position="absolute"
-            top="50%"
-            right="4px"
-            transform="translateY(-50%)"
-          />
-        </Box>
-      </Box>
+          <Text
+            fontSize="20px"
+            textAlign="center"
+            textShadow="2px 2px #4FD1C5"
+            mb="10px"
+          >
+            登録
+          </Text>
+          <Box position="relative" w="80%">
+            <Input background="white" />
+            <IconButton
+              icon={<ArrowForwardIcon />}
+              aria-label="Open menu"
+              size="sm"
+              position="absolute"
+              top="50%"
+              right="3%"
+              transform="translateY(-50%)"
+            />
+          </Box>
+        </CardBody>
+      </Card>
     </>
   );
 };
