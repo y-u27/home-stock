@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
 import type { Metadata } from "next";
 import Header from "./components/Header";
 import Link from "next/link";
@@ -15,12 +15,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>
+      <body
+        style={{
+          // background: "",
+          margin: 0,
+          padding: 0,
+          minHeight: "100vh",
+        }}
+      >
         <ChakraProvider>
           <Link href="/manage">
             <Header />
           </Link>
-          {children}
+          <Box minHeight="100vh" backgroundColor="">{children}</Box>
         </ChakraProvider>
       </body>
     </html>
