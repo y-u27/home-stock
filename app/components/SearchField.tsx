@@ -5,35 +5,42 @@
 "use client";
 
 import { Search2Icon } from "@chakra-ui/icons";
-import { Box, IconButton, Input, Text } from "@chakra-ui/react";
+import { Box, Card, CardBody, IconButton, Input, Text } from "@chakra-ui/react";
 
 const SearchField = () => {
   return (
     <>
-      <Box>
-        <Text
-          fontSize="20px"
-          textAlign="center"
-          textShadow="2px 2px #F6AD55"
-          position="fixed"
-          right="10%"
-          bottom="90px"
+      <Card w="280px" h="150px" background="orange.200">
+        <CardBody
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
         >
-          検索
-        </Text>
-        <Box position="relative" w="120%">
-          <Input />
-          <IconButton
-            icon={<Search2Icon />}
-            aria-label="Open menu"
-            size="sm"
-            position="absolute"
-            top="50%"
-            right="4px"
-            transform="translateY(-50%)"
-          />
-        </Box>
-      </Box>
+          <Box>
+            <Text
+              fontSize="20px"
+              textAlign="center"
+              textShadow="2px 2px #F6AD55"
+              mb="10px"
+            >
+              検索
+            </Text>
+            <Box position="relative" w="100%">
+              <Input background="white" />
+              <IconButton
+                icon={<Search2Icon />}
+                aria-label="Open menu"
+                size="sm"
+                position="absolute"
+                top="50%"
+                right="3%"
+                transform="translateY(-50%)"
+              />
+            </Box>
+          </Box>
+        </CardBody>
+      </Card>
     </>
   );
 };
