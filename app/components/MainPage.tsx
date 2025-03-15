@@ -5,16 +5,18 @@ import SearchField from "./SearchField";
 const MainPage = () => {
   return (
     <>
-      <Box position="relative">
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        justifyContent="center"
+        minH="80vh"
+      >
         <Box
           display="flex"
           justifyContent="center"
           alignItems="center"
-          gap="250px"
-          position="absolute"
-          top="250px"
-          left="50%"
-          transform="translateX(-50%)"
+          gap="40px"
         >
           <RegisterField />
           <SearchField />
